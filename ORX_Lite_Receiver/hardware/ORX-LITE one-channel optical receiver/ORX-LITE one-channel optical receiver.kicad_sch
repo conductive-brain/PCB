@@ -1,0 +1,19 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "a1183d85-46f7-4cab-b806-79d5a642819d")
+	(paper "A3")
+	(title_block
+		(title "ORX-LITE one-channel optical receiver")
+		(date "2026-10-11")
+		(rev "A")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
