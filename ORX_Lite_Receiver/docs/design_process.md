@@ -231,7 +231,7 @@ $$\Delta V = 3.0\,\text{V} \cdot \frac{15\,\text{pF}}{15\,\text{pF} + 1.5\,\text
 ```
 
 69 µV is below half an LSB (366 µV). This simple estimate assumes U4's output is stiff;
-the SPICE simulation (step 10) checks it with the real op amp.
+the SPICE simulation (step 5) checks it with the real op amp.
 
 ## 8. ADC and SPI
 
@@ -289,5 +289,5 @@ i_{min} = v_{tot} over R_3 = {336 " %mu V"} over {100 " k" %OMEGA} = 3.4 " nA"_{
 
 ## 10. Still to check
 
-- SPICE simulation of the chain: frequency response, noise, and the dip at the ADC input (step 10).
-- Layout rules, from placement to routing (steps 11 to 13).
+- SPICE simulation of the chain: frequency response, noise, and the dip at the ADC input (step 5).
+- Layout rules, from placement to routing (steps 7 and 8).

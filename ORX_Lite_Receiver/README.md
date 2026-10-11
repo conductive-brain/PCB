@@ -29,19 +29,14 @@ hardware/                the KiCad project
 | Step | What | State |
 |---|---|---|
 | 1 | KiCad project, page setup | done |
-| 2 | power input: J1, ferrite beads, PWR_FLAGs | done |
-| 3 | regulators U1, U2 | done |
-| 4 | LED and test points | done |
-| 5 | photodiode bias | to do |
-| 6 | TIA and its reference | to do |
-| 7 | filter and ADC input network | to do |
-| 8 | ADC and SPI lines | to do |
-| 9 | footprints, ERC, schematic check | to do |
-| 10 | SPICE simulation | to do |
-| 11 | board setup: outline, 4-layer stackup, rules | to do |
-| 12 | placement | to do |
-| 13 | routing | to do |
-| 14 | manufacturing files | to do |
+| 2 | power section: J1, ferrite beads, regulators U1 and U2, LED, test points TP1 to TP5 | done |
+| 3 | front end, photodiode to filter: bias, TIA and its reference, Sallen-Key low-pass | to do |
+| 4 | ADC and host connector: input RC, ADS7042, SPI resistors, mounting holes | to do |
+| 5 | footprints, ERC, netlist check, SPICE simulation | to do |
+| 6 | 4-layer board setup: outline, stackup, rules | to do |
+| 7 | placement | to do |
+| 8 | routing, ground and power planes, DRC | to do |
+| 9 | release files | to do |
 
 ## Check the schematic
 
