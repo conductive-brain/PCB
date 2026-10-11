@@ -1,0 +1,15 @@
+# KiCad: backups, autosave, lock and local view files
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.lck
+\#auto_saved_files#
+_autosave-*
+*.bak
+*-bak
+
+# generated
+release/
+*.net
+__pycache__/
+*.pyc
