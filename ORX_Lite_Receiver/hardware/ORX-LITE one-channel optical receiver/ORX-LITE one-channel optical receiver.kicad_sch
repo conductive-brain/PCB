@@ -10,6 +10,185 @@
 		(rev "A")
 	)
 	(lib_symbols
+		(symbol "Amplifier_Operational:OPA365xxDBV"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -1.27 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "OPA365xxDBV"
+				(at -1.27 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at -2.54 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa365.pdf"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "50-MHz, Zero-Crossover, Low-Distortion, High CMRR, RRI/O, Single-Supply, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "single opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "OPA365xxDBV_0_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "OPA365xxDBV_1_1"
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -1428,6 +1607,233 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Sensor_Optical:S5971"
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 2.54 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "S5971"
+				(at 5.08 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_THT:TO-18-3"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.hamamatsu.com/resources/pdf/ssd/s5971_etc_kpin1025e.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Si PIN Photodiode, 0.1 GHz, TO-18-3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "opto photodiode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO?18*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "S5971_0_0"
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 3.81)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "S5971_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -3.81 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 1.778) (xy -0.254 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.302) (xy -0.762 1.778) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 3.302) (xy 0.508 1.778) (xy 0.508 2.286) (xy 0.508 1.778) (xy 1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "S5971_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -1894,10 +2300,22 @@
 		(uuid "08834088-baa5-4b85-babe-81513bb33fb2")
 	)
 	(junction
+		(at 373.38 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2acd038b-5c00-4a9b-bab4-b9bbe745d336")
+	)
+	(junction
 		(at 363.22 245.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "38ae2d6b-764e-4f61-b40e-34ecda8e2f8c")
+	)
+	(junction
+		(at 298.45 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ca481f2-7e4f-478b-bfc5-b97d122d5e4c")
 	)
 	(junction
 		(at 351.79 203.2)
@@ -1906,10 +2324,34 @@
 		(uuid "741fc44b-7e04-4a57-9532-bc945f013b6d")
 	)
 	(junction
+		(at 368.3 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74513caf-99af-4fe2-a218-1f742cc63516")
+	)
+	(junction
+		(at 320.04 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89c6d2b3-17c2-4399-89a2-c9f853f273d2")
+	)
+	(junction
+		(at 297.18 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1bc96bb-58f5-467a-904b-8e65a19748b3")
+	)
+	(junction
 		(at 307.34 231.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b9ec3131-ba05-41b4-9f70-39cc981aed6a")
+	)
+	(junction
+		(at 350.52 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bce0461d-6efb-4373-9b66-8e1fd7f711cd")
 	)
 	(junction
 		(at 350.52 232.41)
@@ -1918,10 +2360,28 @@
 		(uuid "c20d4f91-8489-43a8-88db-9ad3a5d26440")
 	)
 	(junction
+		(at 370.84 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4934bc9-cfd8-4343-94ff-cb973ad4456e")
+	)
+	(junction
+		(at 373.38 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5f39395-e32f-4fa6-a1fc-425e9bddbb2c")
+	)
+	(junction
 		(at 351.79 198.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3e8348e-bc6a-4e86-a775-7af0645567dc")
+	)
+	(junction
+		(at 387.35 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4d3f834-d252-4073-83df-7f5673d27949")
 	)
 	(junction
 		(at 351.79 200.66)
@@ -1951,6 +2411,36 @@
 	)
 	(wire
 		(pts
+			(xy 392.43 121.92) (xy 392.43 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "022e09d4-cb3d-4fae-9bcf-4cef623da2e5")
+	)
+	(wire
+		(pts
+			(xy 383.54 151.13) (xy 387.35 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02c86a82-16ff-479f-8773-e8de80327cf8")
+	)
+	(wire
+		(pts
+			(xy 373.38 64.77) (xy 373.38 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "083d4f2e-0382-41a4-9953-fb3786d93ffe")
+	)
+	(wire
+		(pts
 			(xy 363.22 240.03) (xy 363.22 245.11)
 		)
 		(stroke
@@ -1958,6 +2448,26 @@
 			(type default)
 		)
 		(uuid "0b1592cc-9fcc-4495-8134-c894f4bb70ce")
+	)
+	(wire
+		(pts
+			(xy 384.81 54.61) (xy 384.81 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ca8fbc7-3628-4d59-9aa5-a3d218d6d6ab")
+	)
+	(wire
+		(pts
+			(xy 298.45 43.18) (xy 298.45 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10398692-7320-44e6-8df1-d475ab4f021f")
 	)
 	(wire
 		(pts
@@ -1971,6 +2481,16 @@
 	)
 	(wire
 		(pts
+			(xy 289.56 137.16) (xy 304.8 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11661ccc-e582-42a9-886e-db6f368df87c")
+	)
+	(wire
+		(pts
 			(xy 351.79 195.58) (xy 351.79 198.12)
 		)
 		(stroke
@@ -1978,6 +2498,16 @@
 			(type default)
 		)
 		(uuid "11bb56b7-dacd-4202-a014-bd5711cfa39f")
+	)
+	(wire
+		(pts
+			(xy 379.73 129.54) (xy 379.73 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14635189-1110-4aff-be80-c2cb66ce3bea")
 	)
 	(wire
 		(pts
@@ -2031,6 +2561,46 @@
 	)
 	(wire
 		(pts
+			(xy 383.54 140.97) (xy 387.35 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d16e2e3-ba85-4fff-8cc6-3b49ad144570")
+	)
+	(wire
+		(pts
+			(xy 308.61 85.09) (xy 308.61 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e109be2-773f-4fa2-9042-fb42edfbb9b4")
+	)
+	(wire
+		(pts
+			(xy 384.81 64.77) (xy 384.81 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2447acaf-3dc0-429f-9f75-cd78a85c7eb8")
+	)
+	(wire
+		(pts
+			(xy 363.22 64.77) (xy 373.38 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "251c0bb1-1486-40c6-b5c5-b48112206e22")
+	)
+	(wire
+		(pts
 			(xy 334.01 245.11) (xy 334.01 243.84)
 		)
 		(stroke
@@ -2061,6 +2631,16 @@
 	)
 	(wire
 		(pts
+			(xy 330.2 26.67) (xy 330.2 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e655b5e-2ac3-4f1f-aabe-a643af6de66a")
+	)
+	(wire
+		(pts
 			(xy 316.23 184.15) (xy 316.23 189.23)
 		)
 		(stroke
@@ -2068,6 +2648,16 @@
 			(type default)
 		)
 		(uuid "2e861fc3-beb7-4614-893a-a53b0aee94f6")
+	)
+	(wire
+		(pts
+			(xy 387.35 140.97) (xy 387.35 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ffa2ef3-6edd-4db6-ab8d-106a97bd5c35")
 	)
 	(wire
 		(pts
@@ -2081,6 +2671,16 @@
 	)
 	(wire
 		(pts
+			(xy 370.84 151.13) (xy 375.92 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be88c30-cf1b-4af4-b9ca-bd4ee427bc35")
+	)
+	(wire
+		(pts
 			(xy 328.93 195.58) (xy 334.01 195.58)
 		)
 		(stroke
@@ -2088,6 +2688,16 @@
 			(type default)
 		)
 		(uuid "3e02e78e-2802-4305-b1a2-69c96b077598")
+	)
+	(wire
+		(pts
+			(xy 368.3 144.78) (xy 370.84 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "406c42ab-faf1-4e44-a059-6436666cc3e0")
 	)
 	(wire
 		(pts
@@ -2111,6 +2721,66 @@
 	)
 	(wire
 		(pts
+			(xy 363.22 63.5) (xy 363.22 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "468eb761-a2a0-467e-b962-6474054a7194")
+	)
+	(wire
+		(pts
+			(xy 355.6 132.08) (xy 355.6 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47db5f13-946f-483b-aa69-4c03ae86b20a")
+	)
+	(wire
+		(pts
+			(xy 379.73 110.49) (xy 379.73 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49ce4ef2-9b27-488b-aac6-2900f2cbb198")
+	)
+	(wire
+		(pts
+			(xy 363.22 55.88) (xy 363.22 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a1129bf-9ca6-4bf4-b00e-74f00434467f")
+	)
+	(wire
+		(pts
+			(xy 373.38 54.61) (xy 373.38 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fe7834b-aeb3-4760-9521-c0fa7b5c0bd9")
+	)
+	(wire
+		(pts
+			(xy 320.04 91.44) (xy 350.52 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56a9a4b6-dd63-48f2-a7e0-fe2d0d6f8e08")
+	)
+	(wire
+		(pts
 			(xy 350.52 229.87) (xy 355.6 229.87)
 		)
 		(stroke
@@ -2118,6 +2788,26 @@
 			(type default)
 		)
 		(uuid "5709b6c2-6698-4a03-9672-253b88416896")
+	)
+	(wire
+		(pts
+			(xy 297.18 125.73) (xy 304.8 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "573844df-b2aa-40bd-9f19-cad66d11c422")
+	)
+	(wire
+		(pts
+			(xy 370.84 144.78) (xy 370.84 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58ad37f9-f871-4b67-8743-8d6357b8c9f2")
 	)
 	(wire
 		(pts
@@ -2141,6 +2831,16 @@
 	)
 	(wire
 		(pts
+			(xy 289.56 127) (xy 289.56 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e62343b-59c6-4466-8066-ad4eef17c8b8")
+	)
+	(wire
+		(pts
 			(xy 346.71 203.2) (xy 351.79 203.2)
 		)
 		(stroke
@@ -2148,6 +2848,26 @@
 			(type default)
 		)
 		(uuid "63782ca5-1921-4390-a30d-f23992b0a616")
+	)
+	(wire
+		(pts
+			(xy 387.35 144.78) (xy 387.35 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6388ef55-6f1b-4bec-9953-35eba0539365")
+	)
+	(wire
+		(pts
+			(xy 365.76 102.87) (xy 365.76 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63acff70-8c13-42f6-b82a-e83a878168a9")
 	)
 	(wire
 		(pts
@@ -2171,6 +2891,26 @@
 	)
 	(wire
 		(pts
+			(xy 289.56 134.62) (xy 289.56 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65fb9aa5-d03c-4231-bff8-b5bc545316c7")
+	)
+	(wire
+		(pts
+			(xy 298.45 43.18) (xy 309.88 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "676f4c7d-a1b0-4ecf-870a-e30ca3db1abe")
+	)
+	(wire
+		(pts
 			(xy 383.54 210.82) (xy 383.54 213.36)
 		)
 		(stroke
@@ -2188,6 +2928,16 @@
 			(type default)
 		)
 		(uuid "687f0170-838a-473d-b1ce-37d5bb2a558f")
+	)
+	(wire
+		(pts
+			(xy 346.71 77.47) (xy 350.52 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a02dd52-969a-4f59-8dea-e7fa769b6a13")
 	)
 	(wire
 		(pts
@@ -2221,6 +2971,56 @@
 	)
 	(wire
 		(pts
+			(xy 308.61 64.77) (xy 308.61 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7278a4bf-d6d8-443f-8161-f59b67508cce")
+	)
+	(wire
+		(pts
+			(xy 300.99 80.01) (xy 300.99 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73626925-428a-4bca-b337-3a1517cb6536")
+	)
+	(wire
+		(pts
+			(xy 318.77 77.47) (xy 320.04 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76626e51-b9a6-4698-b2d3-ebc0cf8b0747")
+	)
+	(wire
+		(pts
+			(xy 370.84 144.78) (xy 370.84 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78db15e1-2886-4da8-8dc8-201fd7280dda")
+	)
+	(wire
+		(pts
+			(xy 350.52 77.47) (xy 351.79 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80e40122-684f-4ca8-8ec5-6e25295c343e")
+	)
+	(wire
+		(pts
 			(xy 334.01 228.6) (xy 334.01 236.22)
 		)
 		(stroke
@@ -2228,6 +3028,26 @@
 			(type default)
 		)
 		(uuid "8109e57f-ce9f-4155-91e8-d7ca6d806c7b")
+	)
+	(wire
+		(pts
+			(xy 320.04 116.84) (xy 320.04 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "811a4cba-a033-4b62-8089-e0c386c525ed")
+	)
+	(wire
+		(pts
+			(xy 304.8 125.73) (xy 304.8 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8281670c-0fc9-4088-9e36-6da66c87b700")
 	)
 	(wire
 		(pts
@@ -2248,6 +3068,36 @@
 			(type default)
 		)
 		(uuid "8a9b6be9-bed9-4cfe-95a9-3643837dde30")
+	)
+	(wire
+		(pts
+			(xy 320.04 91.44) (xy 320.04 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c7f5f38-99a3-4f85-94a4-8e79e8726964")
+	)
+	(wire
+		(pts
+			(xy 317.5 43.18) (xy 322.58 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "909a6483-c106-4021-a010-345fc3c695b1")
+	)
+	(wire
+		(pts
+			(xy 389.89 121.92) (xy 392.43 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "921004c7-3bab-40ac-9c9b-85df66adefba")
 	)
 	(wire
 		(pts
@@ -2281,6 +3131,66 @@
 	)
 	(wire
 		(pts
+			(xy 370.84 140.97) (xy 375.92 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "996892d3-2753-4ec2-84ed-0a9434b051c1")
+	)
+	(wire
+		(pts
+			(xy 294.64 26.67) (xy 294.64 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a8515bf-fd80-40d1-8c5e-a155dd9650a4")
+	)
+	(wire
+		(pts
+			(xy 331.47 77.47) (xy 339.09 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d81a3de-7346-4810-926f-0516aa975462")
+	)
+	(wire
+		(pts
+			(xy 350.52 77.47) (xy 350.52 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a11a1d4e-8cc0-4842-9307-d005915a3643")
+	)
+	(wire
+		(pts
+			(xy 388.62 110.49) (xy 379.73 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a432c1d0-9233-4a78-a974-262e1fe16f5e")
+	)
+	(wire
+		(pts
+			(xy 300.99 91.44) (xy 320.04 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a625a521-9968-449a-afc5-f220a3508864")
+	)
+	(wire
+		(pts
 			(xy 354.33 168.91) (xy 354.33 175.26)
 		)
 		(stroke
@@ -2301,6 +3211,46 @@
 	)
 	(wire
 		(pts
+			(xy 303.53 80.01) (xy 300.99 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad51044b-2e96-418b-8ec7-66016358122c")
+	)
+	(wire
+		(pts
+			(xy 298.45 55.88) (xy 298.45 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af2d1733-b006-41c8-9b57-87f34762dfbc")
+	)
+	(wire
+		(pts
+			(xy 320.04 105.41) (xy 320.04 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afabe7de-d4a7-4e35-b325-15c48866f1e9")
+	)
+	(wire
+		(pts
+			(xy 320.04 77.47) (xy 320.04 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b40dd155-1e77-4025-9dd9-2d949a4989bd")
+	)
+	(wire
+		(pts
 			(xy 346.71 198.12) (xy 351.79 198.12)
 		)
 		(stroke
@@ -2318,6 +3268,16 @@
 			(type default)
 		)
 		(uuid "b806be87-7d97-45a8-b778-0474efb36e42")
+	)
+	(wire
+		(pts
+			(xy 373.38 64.77) (xy 384.81 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b91482b1-1d6b-4b16-b636-f8db95d66f9e")
 	)
 	(wire
 		(pts
@@ -2361,6 +3321,16 @@
 	)
 	(wire
 		(pts
+			(xy 365.76 119.38) (xy 374.65 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2684924-2a17-466f-b99d-2408d609d319")
+	)
+	(wire
+		(pts
 			(xy 383.54 186.69) (xy 383.54 190.5)
 		)
 		(stroke
@@ -2371,6 +3341,16 @@
 	)
 	(wire
 		(pts
+			(xy 363.22 54.61) (xy 373.38 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c42365e0-0e9a-4e2b-acc8-75903bf9e2c6")
+	)
+	(wire
+		(pts
 			(xy 307.34 231.14) (xy 312.42 231.14)
 		)
 		(stroke
@@ -2378,6 +3358,16 @@
 			(type default)
 		)
 		(uuid "c51aee95-f64f-44f6-be6a-855294bb884c")
+	)
+	(wire
+		(pts
+			(xy 297.18 109.22) (xy 297.18 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c56fc49b-7e3d-4c51-8fe6-b55a14c05410")
 	)
 	(wire
 		(pts
@@ -2411,6 +3401,76 @@
 	)
 	(wire
 		(pts
+			(xy 308.61 64.77) (xy 317.5 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d59b723a-5c5b-44b6-881a-a20a5f2156fd")
+	)
+	(wire
+		(pts
+			(xy 363.22 124.46) (xy 368.3 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d74173d4-ffb3-4c88-ac30-edd29a22a82b")
+	)
+	(wire
+		(pts
+			(xy 312.42 26.67) (xy 312.42 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d81d77c2-7cd3-4fe8-ac31-e43af6e9f35a")
+	)
+	(wire
+		(pts
+			(xy 325.12 64.77) (xy 328.93 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d855c25e-ab67-43f4-bb73-aa4ad54b0005")
+	)
+	(wire
+		(pts
+			(xy 396.24 110.49) (xy 400.05 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d949030b-ea13-40d0-86f2-e6f32584df1d")
+	)
+	(wire
+		(pts
+			(xy 387.35 144.78) (xy 392.43 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd7bc293-b924-4f3d-ae68-3d553ad52c9d")
+	)
+	(wire
+		(pts
+			(xy 312.42 55.88) (xy 350.52 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddaa3ad1-af2f-476d-93b4-5fa5bce9b03f")
+	)
+	(wire
+		(pts
 			(xy 307.34 231.14) (xy 307.34 236.22)
 		)
 		(stroke
@@ -2418,6 +3478,26 @@
 			(type default)
 		)
 		(uuid "e080d23a-1835-4712-a2dd-3b34bb0bb2cb")
+	)
+	(wire
+		(pts
+			(xy 298.45 55.88) (xy 304.8 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e08de6c5-db95-4c2e-95c0-1b11a2018453")
+	)
+	(wire
+		(pts
+			(xy 344.17 124.46) (xy 347.98 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e212a6cc-ef63-4cbf-a815-960f63324248")
 	)
 	(wire
 		(pts
@@ -2431,6 +3511,36 @@
 	)
 	(wire
 		(pts
+			(xy 368.3 124.46) (xy 374.65 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e626c7b3-50bf-4ac1-8a65-cbad5c78470f")
+	)
+	(wire
+		(pts
+			(xy 350.52 87.63) (xy 350.52 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9ff1025-5a3c-4d32-838a-5906a0889e8e")
+	)
+	(wire
+		(pts
+			(xy 297.18 119.38) (xy 297.18 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaccf734-bab9-4f94-b115-4cdd715fdc5a")
+	)
+	(wire
+		(pts
 			(xy 393.7 167.64) (xy 393.7 168.91)
 		)
 		(stroke
@@ -2438,6 +3548,16 @@
 			(type default)
 		)
 		(uuid "ec92d0ff-1c7f-45db-9220-c324ebd16f66")
+	)
+	(wire
+		(pts
+			(xy 365.76 113.03) (xy 365.76 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed4dda98-b0c0-496d-b7ac-cd96570d45e6")
 	)
 	(wire
 		(pts
@@ -2461,6 +3581,26 @@
 	)
 	(wire
 		(pts
+			(xy 289.56 125.73) (xy 297.18 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f628db74-9f47-4050-9718-86261e959ced")
+	)
+	(wire
+		(pts
+			(xy 304.8 134.62) (xy 304.8 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6f55b29-5a73-44af-95c0-d7fa87596690")
+	)
+	(wire
+		(pts
 			(xy 346.71 205.74) (xy 351.79 205.74)
 		)
 		(stroke
@@ -2468,6 +3608,66 @@
 			(type default)
 		)
 		(uuid "f8789b68-e2c1-476f-8290-f6abf98e10df")
+	)
+	(wire
+		(pts
+			(xy 303.53 74.93) (xy 298.45 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa8b1c91-1229-473a-8981-07feb6b19c59")
+	)
+	(wire
+		(pts
+			(xy 368.3 144.78) (xy 368.3 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd21668a-c923-4376-8f00-9f7d6c2f63b8")
+	)
+	(wire
+		(pts
+			(xy 350.52 55.88) (xy 350.52 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff7683b8-b611-497d-a5ce-17e291786d6d")
+	)
+	(wire
+		(pts
+			(xy 373.38 54.61) (xy 384.81 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffd3c22c-552c-4ce5-b112-89531f94d416")
+	)
+	(label "TIA_OUT"
+		(at 312.42 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0223ae5b-d930-4105-b2c9-61c6c69d5b5a")
+	)
+	(label "GND"
+		(at 375.92 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "087b9d6b-4ddf-4858-8de2-512ed92b0857")
 	)
 	(label "+3V3_A"
 		(at 374.65 229.87 0)
@@ -2479,6 +3679,46 @@
 		)
 		(uuid "11db4e1d-894f-4081-834b-fb59ac2999eb")
 	)
+	(label "+3V3_A"
+		(at 308.61 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "145b4601-2338-49df-b775-57423a085929")
+	)
+	(label "ADC_IN"
+		(at 320.04 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ceed946-8f0c-4a80-b24e-df4b4735be26")
+	)
+	(label "SK_B"
+		(at 298.45 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f4c9adb-4e0c-4b35-9b21-98bb03a07eab")
+	)
+	(label "GND"
+		(at 322.58 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2a99b728-c0c9-4948-902b-0a29c9d5b9b1")
+	)
 	(label "GND"
 		(at 316.23 213.36 0)
 		(effects
@@ -2489,6 +3729,36 @@
 		)
 		(uuid "32a7a084-98bc-480e-806c-5a53188b80b6")
 	)
+	(label "GND"
+		(at 400.05 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "336a9629-3d6e-4248-be5a-0ca0072f7938")
+	)
+	(label "PD_K"
+		(at 344.17 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "347d7e42-4049-4ce7-9fff-83f5cb4dca17")
+	)
+	(label "GND"
+		(at 355.6 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c66d5a3-47f5-49ac-a9fc-d0d31fd3dc76")
+	)
 	(label "+3V3"
 		(at 328.93 198.12 0)
 		(effects
@@ -2498,6 +3768,56 @@
 			(justify left bottom)
 		)
 		(uuid "46d0f704-cc4f-4bd8-8651-feeb85d6bee9")
+	)
+	(label "ADC_IN"
+		(at 330.2 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49b47544-5613-487c-bddd-d6ba0d935fef")
+	)
+	(label "PD_K"
+		(at 300.99 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "53bbe5b1-eb96-4de1-8b08-35fc639e2f85")
+	)
+	(label "GND"
+		(at 297.18 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5efbc897-e0ce-4e68-acf0-b047847c52ff")
+	)
+	(label "VREF_TIA"
+		(at 294.64 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f87a02c-aa5a-4ec7-b417-01e9ecfaa818")
+	)
+	(label "SK_A"
+		(at 351.79 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6212c574-9a58-4da6-b90b-34d63bf2a473")
 	)
 	(label "+3V3_A"
 		(at 312.42 175.26 0)
@@ -2529,6 +3849,16 @@
 		)
 		(uuid "6c1c57d4-5e41-4fe0-8305-26e1e8865e8d")
 	)
+	(label "+3V3_A"
+		(at 379.73 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d9640dd-9cde-417f-970a-8fcacc651c01")
+	)
 	(label "+5V"
 		(at 328.93 195.58 0)
 		(effects
@@ -2558,6 +3888,16 @@
 			(justify left bottom)
 		)
 		(uuid "74a54b3c-d135-4b07-bb4e-1d43de092977")
+	)
+	(label "GND"
+		(at 328.93 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "76d25329-7cae-49e6-86f1-6a4afc01062d")
 	)
 	(label "GND"
 		(at 364.49 245.11 0)
@@ -2609,6 +3949,16 @@
 		)
 		(uuid "917607f7-40b4-4a1e-932d-c0d4504854d7")
 	)
+	(label "GND"
+		(at 320.04 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9353df9d-248c-4c79-8bd0-34392dfa63c2")
+	)
 	(label "+3V3_D"
 		(at 340.36 175.26 0)
 		(effects
@@ -2618,6 +3968,16 @@
 			(justify left bottom)
 		)
 		(uuid "9f2aef5f-d1f3-45e7-9f75-a61d1daf492c")
+	)
+	(label "+5V_F"
+		(at 297.18 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4213d5b-39af-4b15-85ab-c1b1236ca98b")
 	)
 	(label "+3V0_ADC"
 		(at 331.47 228.6 0)
@@ -2639,6 +3999,16 @@
 		)
 		(uuid "b652fdfc-52ae-446e-a0e4-28f063d2d61e")
 	)
+	(label "TIA_OUT"
+		(at 392.43 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b742117c-bef5-44e2-aa70-67b4de68f6f0")
+	)
 	(label "+5V_F"
 		(at 298.45 175.26 0)
 		(effects
@@ -2649,6 +4019,16 @@
 		)
 		(uuid "be8d1215-6325-46e8-8653-99928482734e")
 	)
+	(label "TIA_IN"
+		(at 367.03 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4439436-5f7b-4977-89ce-d908fe58c7c6")
+	)
 	(label "+5V_F"
 		(at 350.52 229.87 180)
 		(effects
@@ -2658,6 +4038,26 @@
 			(justify right bottom)
 		)
 		(uuid "c93c9699-092c-42be-b311-775b906e4ce1")
+	)
+	(label "+3V0_ADC"
+		(at 365.76 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0828f10-74df-4691-856d-4fed4a562e3e")
+	)
+	(label "GND"
+		(at 379.73 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1c11ef9-9cc2-4354-a76b-55c8d7a308ef")
 	)
 	(label "+5V"
 		(at 363.22 186.69 0)
@@ -2680,6 +4080,26 @@
 		(uuid "e5276952-ce74-4a80-bec9-fd7416f56d91")
 	)
 	(label "GND"
+		(at 308.61 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e57388bc-08a7-4822-997a-3ddeb326d015")
+	)
+	(label "TIA_OUT"
+		(at 331.47 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5b504e2-e59f-487f-9c06-6bbac282a6c2")
+	)
+	(label "GND"
 		(at 321.31 245.11 0)
 		(effects
 			(font
@@ -2688,6 +4108,36 @@
 			(justify left bottom)
 		)
 		(uuid "e5f1dae2-bc4c-4c85-a7bf-a10123a345ab")
+	)
+	(label "VREF_TIA"
+		(at 375.92 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eeac618b-252f-4ba6-8be4-bad0d8bc82c2")
+	)
+	(label "VREF_TIA"
+		(at 365.76 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef97c23c-c088-4b31-b7ed-9e9db6df9793")
+	)
+	(label "FLT_OUT"
+		(at 350.52 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f2c03ed0-118d-4b68-873e-0431156d479a")
 	)
 	(label "SCLK"
 		(at 328.93 200.66 0)
@@ -2718,6 +4168,84 @@
 			(justify left bottom)
 		)
 		(uuid "fae63549-c790-4b3e-ae17-5ec48700724d")
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:OPA365xxDBV")
+		(at 382.27 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01a9047e-842d-437c-9b79-1b4fdb41109e")
+		(property "Reference" "U3"
+			(at 394.97 115.4998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA365xxDBV"
+			(at 394.97 118.0398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 379.73 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa365.pdf"
+			(at 382.27 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50-MHz, Zero-Crossover, Low-Distortion, High CMRR, RRI/O, Single-Supply, SOT-23-5"
+			(at 382.27 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ea4924a0-ba8c-4d69-b89a-fceff29acad1")
+		)
+		(pin "5"
+			(uuid "d997b611-0d95-4f70-8aa3-dc02fd371ba3")
+		)
+		(pin "3"
+			(uuid "9df273b4-3281-4f3e-83c4-e1353f188abd")
+		)
+		(pin "4"
+			(uuid "50d6eeb8-e228-4411-aa29-ea0324704713")
+		)
+		(pin "1"
+			(uuid "bcce41f6-a2b6-4a3f-92d5-aa9f95048d40")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -2781,6 +4309,74 @@
 			(project "ORX-LITE one-channel optical receiver"
 				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
 					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 308.61 55.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cdbb991-c34f-44c1-bbc6-57e888267362")
+		(property "Reference" "R7"
+			(at 308.61 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.99k"
+			(at 308.61 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 308.61 57.658 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 308.61 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 308.61 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e109399-e797-499d-941f-3738dbaa68c1")
+		)
+		(pin "2"
+			(uuid "0f273eed-560d-4dd5-9dc2-45e323cfa77c")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -2858,6 +4454,143 @@
 			(project "ORX-LITE one-channel optical receiver"
 				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 350.52 83.82 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21164c75-c04d-4d02-acda-6771a8d25d20")
+		(property "Reference" "C13"
+			(at 354.33 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220p"
+			(at 354.33 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 349.5548 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 350.52 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 350.52 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fe56dee3-431a-49c7-8294-ee088fe0f359")
+		)
+		(pin "1"
+			(uuid "a9ebcc62-b0b2-4355-8b6d-69a9997e83c4")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 312.42 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33b04e52-6406-4681-98fe-b0b567e93dea")
+		(property "Reference" "TP7"
+			(at 314.96 22.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 314.96 24.6379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.5 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 312.42 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e8d135f-6192-41f6-9a1d-5ba4e426a72c")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -3087,6 +4820,76 @@
 			(project "ORX-LITE one-channel optical receiver"
 				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 289.56 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e4656d0-d7bf-4f58-bae9-851ce9d2efcc")
+		(property "Reference" "C7"
+			(at 293.37 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 293.37 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 290.5252 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 289.56 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 289.56 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "304a260d-57d3-4513-aab1-1f1e48f40f12")
+		)
+		(pin "1"
+			(uuid "ab9a10dd-02da-42e6-9b74-d731dfc7c2b5")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -3436,6 +5239,214 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 297.18 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65cdddf3-a6e1-4b9d-93da-d163c324c782")
+		(property "Reference" "R2"
+			(at 299.72 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 299.72 116.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 295.402 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 297.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f76febbb-c828-42da-b015-08b6eb0c0835")
+		)
+		(pin "2"
+			(uuid "9cbb676a-021b-4a1d-9e11-fefeb2104e37")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 320.04 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6692fb4d-74e7-4250-bd9b-95d466acd909")
+		(property "Reference" "R8"
+			(at 322.58 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22"
+			(at 322.58 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 318.262 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 320.04 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 320.04 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6817db06-6706-4b09-b426-d16b00757449")
+		)
+		(pin "2"
+			(uuid "6ed5b9eb-4c27-4394-9646-bacb8b1d908c")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 342.9 77.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67566fab-9bff-4fab-8eda-69222953575e")
+		(property "Reference" "R6"
+			(at 342.9 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.99k"
+			(at 342.9 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 342.9 79.248 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 342.9 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 342.9 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cb2a76e-30e6-43e4-a85c-52ce53e02a7c")
+		)
+		(pin "2"
+			(uuid "6808f48e-9b09-4ac0-aee0-3372ed120cc1")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 363.22 207.01 0)
 		(unit 1)
@@ -3566,6 +5577,73 @@
 			(project "ORX-LITE one-channel optical receiver"
 				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 294.64 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e9241fe-f880-440b-832a-35a13e005ae7")
+		(property "Reference" "TP6"
+			(at 297.18 22.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 297.18 24.6379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 299.72 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 299.72 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 294.64 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98e2a469-6cf3-406c-a62e-33478fd9c15b")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -4001,6 +6079,426 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 304.8 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "922b00de-10f3-4810-bfe5-aa87ccb0f04a")
+		(property "Reference" "C8"
+			(at 308.61 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 308.61 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 305.7652 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 304.8 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e148a72f-b9bf-4f5f-a408-638295b046af")
+		)
+		(pin "2"
+			(uuid "709a84bb-2345-4262-8918-13592b6f1391")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 313.69 43.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a49e4fbc-fd8b-47f8-9587-6e9c85d17feb")
+		(property "Reference" "C14"
+			(at 316.23 50.8001 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100p"
+			(at 316.23 48.2601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 309.88 44.1452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 313.69 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ca90b16a-b08d-453c-9c71-13fa85125f77")
+		)
+		(pin "1"
+			(uuid "c35b7e72-6f7d-4d2a-b93a-0dcf4599dd67")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 373.38 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7b88d95-29be-409b-b406-e24d895d72ed")
+		(property "Reference" "C11"
+			(at 377.19 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 377.19 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 374.3452 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 373.38 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 373.38 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f90746c9-9b12-457a-b453-ca47acd39be6")
+		)
+		(pin "1"
+			(uuid "83dee8f4-ec12-420a-9e3c-4109483d7ca5")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 365.76 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9e93880-dd23-46f3-89ee-aaa276745894")
+		(property "Reference" "R4"
+			(at 368.3 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2k"
+			(at 368.3 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 363.982 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 365.76 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 365.76 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d9ca7009-798e-462c-a820-9f0ce2f0c7e9")
+		)
+		(pin "1"
+			(uuid "d42d4391-06c6-4b11-b5d9-05eb1a92de79")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Optical:S5971")
+		(at 355.6 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab97d14a-c79a-4aef-841e-cef83a3c115f")
+		(property "Reference" "D2"
+			(at 355.6 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "S5971"
+			(at 355.6 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-18-3"
+			(at 355.6 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.hamamatsu.com/resources/pdf/ssd/s5971_etc_kpin1025e.pdf"
+			(at 355.6 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Si PIN Photodiode, 0.1 GHz, TO-18-3"
+			(at 355.6 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "194dcf3a-f779-4e27-a07c-ebf9f41ff4fe")
+		)
+		(pin "2"
+			(uuid "ee4ee106-367e-4f96-bf75-c59e048c337f")
+		)
+		(pin "1"
+			(uuid "36ce5767-9266-4f40-9f68-06556a03859c")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 384.81 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad4fda11-4b6d-4bb8-854d-1adc2d2f8385")
+		(property "Reference" "C12"
+			(at 388.62 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 388.62 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 385.7752 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 384.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 384.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e70020e-45d0-445f-ab67-8b12d0e12a47")
+		)
+		(pin "2"
+			(uuid "c7c7fd2d-8024-458c-83e7-e5f0108a8245")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 312.42 168.91 0)
 		(unit 1)
@@ -4062,6 +6560,142 @@
 			(project "ORX-LITE one-channel optical receiver"
 				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
 					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 321.31 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bcc6d723-f99a-4a22-9087-d9313322d8d8")
+		(property "Reference" "C15"
+			(at 321.31 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 321.31 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 325.12 63.8048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 321.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 321.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb21db6a-1838-4bc9-844a-168873562a35")
+		)
+		(pin "2"
+			(uuid "6af70891-d589-42f8-b142-3120d9df149f")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 379.73 140.97 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0953f01-83e1-4ff7-b7e3-6c799d9dcaad")
+		(property "Reference" "R3"
+			(at 379.73 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 379.73 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 379.73 139.192 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 379.73 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 379.73 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d25e183a-5aaf-4075-945c-df137d589688")
+		)
+		(pin "2"
+			(uuid "ee00d63b-56a2-4096-8f70-1b600c17520e")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4134,6 +6768,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 363.22 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c87659d6-196c-45bc-918c-f8cb2716fe16")
+		(property "Reference" "R5"
+			(at 365.76 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 365.76 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 361.442 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 363.22 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 363.22 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b6996f9-fd42-4fd7-aa71-dd15394605c0")
+		)
+		(pin "2"
+			(uuid "e127f4a8-3915-408d-a980-1888f9096e19")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 350.52 240.03 0)
 		(unit 1)
@@ -4198,6 +6902,220 @@
 			(project "ORX-LITE one-channel optical receiver"
 				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 320.04 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d46d000a-04ba-4cbb-a724-1a6e0c6bb9c0")
+		(property "Reference" "C16"
+			(at 323.85 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.5n"
+			(at 323.85 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 321.0052 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 320.04 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 320.04 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cec6a2f3-a236-4724-9847-229cb60b14e7")
+		)
+		(pin "1"
+			(uuid "50dbc667-5ab4-4b1f-a29f-dd001011a611")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 330.2 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6e5311a-8da4-4429-8c0f-2396d504776a")
+		(property "Reference" "TP8"
+			(at 332.74 22.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 332.74 24.6379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 335.28 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 330.2 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc88299b-5ec2-4f14-b540-d7e1985b56d3")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:OPA365xxDBV")
+		(at 311.15 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e492d514-43d2-44e5-b548-0176dd5538b8")
+		(property "Reference" "U4"
+			(at 323.85 71.0498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA365xxDBV"
+			(at 320.04 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 308.61 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa365.pdf"
+			(at 311.15 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50-MHz, Zero-Crossover, Low-Distortion, High CMRR, RRI/O, Single-Supply, SOT-23-5"
+			(at 311.15 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "1d39cfc8-16b4-4c61-a253-2e44c80bae14")
+		)
+		(pin "3"
+			(uuid "c7585e53-4cb9-4fa7-8b2a-e289e8bcf8cf")
+		)
+		(pin "4"
+			(uuid "d9d1d3a7-da99-4078-9efc-d1fc270fb006")
+		)
+		(pin "1"
+			(uuid "180047f0-302e-4041-ac7b-497039539b1d")
+		)
+		(pin "2"
+			(uuid "04092dcd-6120-4d85-9e1e-1fb380bf9616")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -4406,6 +7324,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 392.43 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef554458-098e-4f60-b98b-db7f6c714666")
+		(property "Reference" "C9"
+			(at 392.43 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 392.43 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 396.24 109.5248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 392.43 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 392.43 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12d94cf6-c8e8-4ae2-997c-f9e7d378f5ee")
+		)
+		(pin "2"
+			(uuid "cf2cdfd6-ffd1-42a3-9c46-b10678ce2c63")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 326.39 168.91 0)
 		(unit 1)
@@ -4467,6 +7453,74 @@
 			(project "ORX-LITE one-channel optical receiver"
 				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
 					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 379.73 151.13 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb359af3-13a6-4a9c-ab63-a36b81426f67")
+		(property "Reference" "C10"
+			(at 379.73 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10p"
+			(at 379.73 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 375.92 152.0952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 379.73 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 379.73 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cdb82c9-2a48-42b9-a53b-48dcc2f82b97")
+		)
+		(pin "2"
+			(uuid "e0810662-fffd-4568-b37e-2f3c1405e4fd")
+		)
+		(instances
+			(project "ORX-LITE one-channel optical receiver"
+				(path "/a1183d85-46f7-4cab-b806-79d5a642819d"
+					(reference "C10")
 					(unit 1)
 				)
 			)

@@ -30,8 +30,8 @@ hardware/                the KiCad project
 |---|---|---|
 | 1 | KiCad project, page setup | done |
 | 2 | power section: J1, ferrite beads, regulators U1 and U2, LED, test points TP1 to TP5 | done |
-| 3 | front end, photodiode to filter: bias, TIA and its reference, Sallen-Key low-pass | to do |
-| 4 | ADC and host connector: input RC, ADS7042, SPI resistors, mounting holes | to do |
+| 3 | front end, photodiode to filter: bias, TIA and its reference, Sallen-Key low-pass, ADC input RC | done |
+| 4 | ADC and host connector: ADS7042, SPI resistors, mounting holes | to do |
 | 5 | footprints, ERC, netlist check, SPICE simulation | to do |
 | 6 | 4-layer board setup: outline, stackup, rules | to do |
 | 7 | placement | to do |
