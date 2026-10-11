@@ -29,9 +29,9 @@ hardware/                the KiCad project
 | Step | What | State |
 |---|---|---|
 | 1 | KiCad project, page setup | done |
-| 2 | power input: J1, ferrite beads, PWR_FLAGs | to do |
-| 3 | regulators U1, U2 | to do |
-| 4 | LED and test points | to do |
+| 2 | power input: J1, ferrite beads, PWR_FLAGs | done |
+| 3 | regulators U1, U2 | done |
+| 4 | LED and test points | done |
 | 5 | photodiode bias | to do |
 | 6 | TIA and its reference | to do |
 | 7 | filter and ADC input network | to do |
