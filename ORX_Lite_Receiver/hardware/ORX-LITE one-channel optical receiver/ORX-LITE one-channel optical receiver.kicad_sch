@@ -2697,7 +2697,7 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "563aabbb-4cba-4e56-986f-f979cf525409")
-	)
+	)
 	(junction
 		(at 209.55 87.63)
 		(diameter 0)
@@ -3058,16 +3058,6 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 74.93) (xy 303.53 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e0f7f8a-8178-4bab-b92d-281dcb52730b")
-	)
-	(wire
-		(pts
 			(xy 198.12 95.25) (xy 198.12 97.79)
 		)
 		(stroke
@@ -3285,7 +3275,17 @@
 			(type default)
 		)
 		(uuid "40b05fcf-8b6d-410b-8289-133d60a558df")
-	)
+	)
+	(wire
+		(pts
+			(xy 303.53 74.93) (xy 303.53 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4162c812-598e-4c9c-9b25-0e677dc4edff")
+	)
 	(wire
 		(pts
 			(xy 156.21 226.06) (xy 161.29 226.06)
@@ -5067,7 +5067,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 170.18 85.09 270)
+		(at 170.18 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8401,7 +8401,7 @@
 				)
 			)
 		)
-	)
+	)
 	(symbol
 		(lib_id "Amplifier_Operational:OPA365xxDBV")
 		(at 200.66 87.63 0)
