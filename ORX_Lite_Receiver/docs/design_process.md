@@ -238,8 +238,9 @@ $$\Delta V = 3.0\,\text{V} \cdot \frac{15\,\text{pF}}{15\,\text{pF} + 1.5\,\text
 %DELTA V = 3.0 " V" cdot {15 " pF"} over {15 " pF" + 1.5 " nF"} = 29.7 " mV" ~~~~ %DELTA V cdot e^{-200 " ns" / 33 " ns"} = 69 " %mu V"
 ```
 
-69 µV is below half an LSB (366 µV). This simple estimate assumes U4's output is stiff;
-the SPICE simulation (step 5) checks it with the real op amp.
+69 µV is below half an LSB (366 µV). This simple estimate assumes U4's output is stiff.
+The SPICE simulation (step 5, section 10) includes U4 and agrees: at 1.5 V the dip is 16.1 mV
+and 28 µV is left after 200 ns.
 
 ## 8. ADC and SPI
 
@@ -295,7 +296,30 @@ $$i_{min} = \frac{v_{tot}}{R_3} = \frac{336\,\mu\text{V}}{100\,\text{k}\Omega} =
 i_{min} = v_{tot} over R_3 = {336 " %mu V"} over {100 " k" %OMEGA} = 3.4 " nA"_{rms}
 ```
 
-## 10. Still to check
+## 10. Simulation results, and what is still to check
 
-- SPICE simulation of the chain: frequency response, noise, and the dip at the ADC input (step 5).
+**SPICE (step 5).** `ORX_LITE_sim/` holds the front end (TIA with its reference, filter, R8 + C16)
+with simulation-only sources, run in KiCad 9 (ngspice):
+- the photodiode is a current source (10 µA DC, 10 µA AC) with 7.5 pF across it (S5971 datasheet);
+- the supplies are ideal 3.3 V and 3.0 V sources;
+- the ADC input is a 15 pF capacitor (ADS7042 datasheet) that a switch connects to ADC_IN for
+  204 ns of every 1 µs; a second switch empties it in between, the worst case;
+- the op amps use KiCad's built-in single-pole model with the OPA365's 50 MHz gain-bandwidth
+  (datasheet). Its gain of 100k and output resistance of 10 Ω are round model values.
+
+| Check | SPICE | Hand calculation (sections 5 to 7) |
+|---|---|---|
+| VREF_TIA | 2.500 V | 2.5 V |
+| TIA_OUT at 10 µA of light | 1.500 V | 2.5 V − 10 µA × 100 kΩ = 1.5 V |
+| TIA bandwidth (−3 dB) | 159 kHz | 159 kHz |
+| Whole chain bandwidth (−3 dB) | 142 kHz | 143 kHz |
+| Whole chain at 500 kHz | −25.1 dB | −25 dB |
+| Whole chain at 900 kHz | −40.2 dB | −40 dB |
+| Highest gain anywhere (peaking) | −0.0002 dB | none expected (Q = 0.74) |
+| Sampling dip, ADC_IN at 1.5 V | 16.1 mV | 14.9 mV (29.7 mV scaled from 3.0 V to 1.5 V) |
+| Dip left after 200 ns | 28 µV | must stay below half an LSB, 366 µV |
+
+Still to check:
+- Noise, with TI's own OPA365 model (the built-in model has no op-amp noise).
+- The ADC's real sampling switch resistance (the simulation uses an ideal 1 Ω).
 - Layout rules, from placement to routing (steps 7 and 8).

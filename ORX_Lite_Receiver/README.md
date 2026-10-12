@@ -23,6 +23,7 @@ docs/figures/            the circuit in signal order, and a block map of the sch
 calc/design_calcs.py     every number in design_process.md (writes calc/results.txt)
 tools/check_schematic.py compares the KiCad schematic with the intended design
 hardware/                the KiCad project
+ORX_LITE_sim/            the SPICE simulation of the front end (KiCad 9, ngspice)
 ```
 
 ## Steps
@@ -33,7 +34,7 @@ hardware/                the KiCad project
 | 2 | power section: J1, ferrite beads, regulators U1 and U2, LED, test points TP1 to TP5 | done |
 | 3 | front end, photodiode to filter: bias, TIA and its reference, Sallen-Key low-pass, ADC input RC | done |
 | 4 | ADC and host connector: ADS7042, SPI resistors, mounting holes | done |
-| 5 | footprints, ERC, netlist check, SPICE simulation | to do |
+| 5 | footprints, ERC, netlist check, SPICE simulation | done |
 | 6 | 4-layer board setup: outline, stackup, rules | to do |
 | 7 | placement | to do |
 | 8 | routing, ground and power planes, DRC | to do |
