@@ -19,7 +19,7 @@ commit message says what was added and why.
 ```
 docs/components.md       every part: what it is, why, how it is connected, where it came from
 docs/design_process.md   the whole design: needs, formulas, values, reasoning
-docs/figures/            the circuit in signal order, and a block map of the schematic page
+docs/figures/            the circuit in signal order, a block map of the page, simulation plots
 calc/design_calcs.py     every number in design_process.md (writes calc/results.txt)
 tools/check_schematic.py compares the KiCad schematic with the intended design
 hardware/                the KiCad project

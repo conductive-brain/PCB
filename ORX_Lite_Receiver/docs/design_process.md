@@ -319,6 +319,41 @@ with simulation-only sources, run in KiCad 9 (ngspice):
 | Sampling dip, ADC_IN at 1.5 V | 16.1 mV | 14.9 mV (29.7 mV scaled from 3.0 V to 1.5 V) |
 | Dip left after 200 ns | 28 µV | must stay below half an LSB, 366 µV |
 
+**The frequency response** (small-signal analysis in KiCad):
+
+![Gain and phase of TIA_OUT and ADC_IN from 100 Hz to 10 MHz](figures/sim_ac.png)
+
+Purple is TIA_OUT, green is ADC_IN. Solid lines are the gain (left axis, dB), dotted lines the
+phase (right axis, degrees). 0 dB is the full TIA gain: the 10 µA AC input × 100 kΩ = 1 V.
+- The TIA alone (purple) is flat, 3 dB down at 159 kHz, then falls 20 dB per decade: one pole,
+  from R3 and C10.
+- The whole chain (green) stays within 0.4 dB up to 50 kHz, is 1.5 dB down at 100 kHz and 3 dB
+  down at 142 kHz. Then it falls about 60 dB per decade: the TIA's pole plus the filter's two.
+  At 500 kHz, half the sample rate, it is 25 dB down, so fast noise cannot fold back.
+- The green line never rises above 0 dB: the filter does not ring.
+- The phase starts at 180° because the TIA inverts: more light gives a lower voltage. The jump
+  of the green phase near 7 MHz is only the plot wrapping from −180° to +180°.
+
+**The ADC sampling** (transient analysis in KiCad, 20 µs):
+
+![ACQ pulses and ADC_IN during 20 samples](figures/sim_transient.png)
+
+Red is ACQ: high for 204 ns of every 1 µs, while the ADC's 15 pF is connected to ADC_IN. Blue is
+ADC_IN at 1.5 V. At every sample the empty 15 pF takes charge from C16, so ADC_IN drops 16.1 mV
+within 1 ns. U4 then refills C16 through R8: 3.3 mV are left after 50 ns, 0.7 mV after 100 ns and
+28 µV after 200 ns, before the switch opens at 204 ns. All 20 samples look the same, so nothing
+builds up from one sample to the next.
+
+**Two problems on the way, and their fixes:**
+- The two switches were first wired the wrong way round: the pulse went into the switch contacts
+  and ADC_IN into the control input. The switch symbol has a control side (the "V" circle) and a
+  contact side. The pulse drives the control side; the signal goes through the contacts.
+- The first 20 µs run seemed to stop at 2.3 µs. Right after the second switch empties the 15 pF,
+  the simulator takes steps of a few picoseconds, and with "Save all currents" ticked KiCad puts a
+  current meter on every pin, which made the run about 80 times slower (measured). With only
+  "Save all voltages" ticked the run finishes in seconds. The values are typed without a decimal
+  point (500p, 20u), so the country setting of the PC cannot change them.
+
 Still to check:
 - Noise, with TI's own OPA365 model (the built-in model has no op-amp noise).
 - The ADC's real sampling switch resistance (the simulation uses an ideal 1 Ω).
