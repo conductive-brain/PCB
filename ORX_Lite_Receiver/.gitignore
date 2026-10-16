@@ -9,7 +9,6 @@ _autosave-*
 *-bak
 
 # generated
-release/
 *.net
 __pycache__/
 *.pyc
