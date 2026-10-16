@@ -24,8 +24,9 @@ calc/design_calcs.py     every number in design_process.md (writes calc/results.
 tools/check_schematic.py compares the KiCad schematic with the intended design
 hardware/                the KiCad project
 ORX_LITE_sim/            the SPICE simulation of the front end (KiCad 9, ngspice)
-release/rev-A/           files to make revision A: Gerbers and drill files (gerbers/),
-                         parts list and placement file (assembly/)
+release/rev-A/           files to make revision A: Gerbers and drill files (gerbers/), parts
+                         list and placement file (assembly/), schematic PDF, assembly
+                         drawing and 3D picture (docs/), fabrication notes (README.md)
 ```
 
 ## Steps
@@ -40,7 +41,7 @@ release/rev-A/           files to make revision A: Gerbers and drill files (gerb
 | 6 | 4-layer board setup: outline, stackup, rules | done |
 | 7 | placement | done |
 | 8 | routing, ground and power planes, DRC | done |
-| 9 | release files | in progress: labels at the factory minimum size, board name, Gerbers, drill files, parts list and placement file done |
+| 9 | release files | in progress: labels, board name, Gerbers, drill files, parts list, placement file and documents done; final review next |
 
 ## Check the schematic
 
