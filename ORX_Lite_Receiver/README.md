@@ -38,7 +38,7 @@ ORX_LITE_sim/            the SPICE simulation of the front end (KiCad 9, ngspice
 | 6 | 4-layer board setup: outline, stackup, rules | done |
 | 7 | placement | done |
 | 8 | routing, ground and power planes, DRC | done |
-| 9 | release files | to do |
+| 9 | release files | in progress: labels tidied, board name and revision added |
 
 ## Check the schematic
 
