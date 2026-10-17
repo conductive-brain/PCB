@@ -41,7 +41,7 @@ release/rev-A/           files to make revision A: Gerbers and drill files (gerb
 | 6 | 4-layer board setup: outline, stackup, rules | done |
 | 7 | placement | done |
 | 8 | routing, ground and power planes, DRC | done |
-| 9 | release files | in progress: labels, board name, Gerbers, drill files, parts list, placement file and documents done; final review next |
+| 9 | release files: Gerbers, drill files, parts list, placement file, documents, fabrication notes | done |
 
 ## Check the schematic
 
