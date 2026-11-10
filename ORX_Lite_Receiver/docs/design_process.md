@@ -28,13 +28,8 @@ light → photodiode → TIA → low-pass filter → R8 + C16 → ADC → J1 →
 - R8 and C16 feed the ADC's sampling capacitor.
 - The ADC turns the voltage into numbers and sends them over SPI.
 
-The whole circuit, drawn in the order the signal travels. It has the same 52 parts, the same
-nets and the same pin numbers as the hardware schematic (compared with the KiCad netlist); only
-the places on the page differ. Orange arrows: the signal, from the light at D2 (block 1 to 7)
-out on SDO to J1. Grey dashed arrows: the clock (SCLK) and start (CS_N) lines from the
-microcontroller. Brown arrows: power, from J1 through the filters and regulators (blocks A to D).
-
-![ORX-LITE signal path: the whole circuit in signal order](figures/signal_path_reference.png)
+The full schematic is in
+[release/rev-A/docs/ORX-LITE one-channel optical receiver.pdf](../release/rev-A/docs/ORX-LITE%20one-channel%20optical%20receiver.pdf).
 
 ## 3. Power
 
